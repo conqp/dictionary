@@ -5,6 +5,7 @@
 #pragma once
 
 #include <map>
+#include <ostream>
 #include <set>
 #include <string>
 
@@ -15,6 +16,8 @@ public:
     Dictionary();
     void add(std::string const &key, std::string const &value);
     std::set<std::string> const & get(std::string const &key) const;
+
+    friend std::ostream& operator<<(std::ostream& out, Dictionary const &dictionary);
 };
 
 

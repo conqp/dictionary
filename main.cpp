@@ -11,12 +11,6 @@ int main()
     englishToGerman.add("this", "das");
     englishToGerman.add("car", "Auto");
     englishToGerman.add("car", "PKW");
-
-    for (auto const & german : englishToGerman.get("this"))
-        cout << "this -> " << german << "\n";
-
-    for (auto const & german : englishToGerman.get("car"))
-        cout << "car -> " << german << "\n";
-
+    cout << englishToGerman;
     return 0;
 }
