@@ -24,8 +24,7 @@ Dictionary::Dictionary()
 void Dictionary::add(string const &key, string const &value)
 {
     try {
-        auto & entry = entries.at(key);
-        entry.insert(value);
+        entries.at(key).insert(value);
     } catch (out_of_range const &) {
         entries.insert({key, {value}});
     }
