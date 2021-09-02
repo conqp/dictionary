@@ -20,7 +20,7 @@ using std::string;
 using std::set;
 
 Dictionary::Dictionary()
-    : entries(map<string, set<string>>())
+    : entries({})
 {
 }
 
