@@ -40,10 +40,9 @@ set<string> const & Dictionary::get(string const &key) const
 
 ostream& operator<<(ostream &out, Dictionary const &dictionary)
 {
-    for (auto const &[key, values] : dictionary.entries) {
+    for (auto const &[key, values] : dictionary.entries)
         for (auto const &value : values)
             out << key << " -> " << value << "\n";
-    }
 
     return out;
 }
