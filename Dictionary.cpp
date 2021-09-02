@@ -38,7 +38,7 @@ set<string> const & Dictionary::get(string const &key) const
     return entries.at(key);
 }
 
-ostream &operator<<(ostream &out, Dictionary const &dictionary)
+ostream& operator<<(ostream &out, Dictionary const &dictionary)
 {
     for (auto const &[key, values] : dictionary.entries) {
         for (auto const &value : values)
